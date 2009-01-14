@@ -62,3 +62,7 @@ assert numpy.isnan(sg.get(1,1).z)
 # closure_tolerance is used for reconciling linestrings into polygons.
 contours = sg.contour(14.0, as_geometry=True, closure_tolerance=0.1)
 }}}
+
+
+= Known issues =
+The current implementation is not thread safe for contouring.
